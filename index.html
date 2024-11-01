@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreikirchen - Offizielle Webseite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Dreikirchen</h1>
+        <p class="intro-text">Willkommen auf der offiziellen Webseite von Dreikirchen im Westerwald.</p>
+        <!-- Navigation toggle button for smaller screens -->
+        <button class="nav-toggle" onclick="toggleNav()">☰ Menü</button>
+    </header>
+
+    <nav id="navbar" class="navbar">
+        <a href="infos.html" class="nav-link">Infos</a>
+        <a href="Ortsplan.html" class="nav-link">Ortsplan</a>
+        <a href="Sehenswürdigkeiten.html" class="nav-link">Sehenswürdigkeiten</a>
+    </nav>
+
+
+    <section class="highlights">
+        <h2 class="highlights-title">Sehenswürdigkeiten</h2>
+        <div class="highlight-item">
+            <img src="pfarrkirche.jpg" alt="Pfarrkirche St. Antonius" class="highlight-image">
+            <h3>Pfarrkirche St. Antonius</h3>
+            <p>Die historische Pfarrkirche von Dreikirchen ist bekannt für ihre beeindruckende Architektur und die schönen Glasfenster.</p>
+        </div>
+        <div class="highlight-item">
+            <img src="dorfmuehle.jpg" alt="Alte Dorfmühle" class="highlight-image">
+            <h3>Alte Dorfmühle</h3>
+            <p>Die Alte Dorfmühle ist ein kleines Museum, das die bäuerliche Geschichte von Dreikirchen widerspiegelt.</p>
+        </div>
+        <div class="highlight-item">
+            <img src="seenplatte.jpg" alt="Westerwälder Seenplatte" class="highlight-image">
+            <h3>Westerwälder Seenplatte</h3>
+            <p>Ein wunderschönes Naturschutzgebiet mit vielen Wanderwegen und idyllischen Seen.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-text">Besuchen Sie Dreikirchen und erleben Sie die Vielfalt seiner Sehenswürdigkeiten und die Schönheit des Westerwaldes!</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var navbar = document.getElementById("navbar");
+            if (navbar.style.display === "flex") {
+                navbar.style.display = "none";
+            } else {
+                navbar.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+</html>
